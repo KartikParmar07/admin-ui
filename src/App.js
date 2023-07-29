@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Components/Header';
 import Table from './Components/Table';
 import Search from './Components/Searchbar';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function App() {
   const [search, setSearch] = useState("");

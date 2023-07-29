@@ -1,6 +1,4 @@
-import React from 'react'
 import axios from 'axios';
-import config from "../Services/userEndpoint";
 
 
 export const userEndpoint = {

@@ -1,3 +1,5 @@
+import React from "react";
+
 const Header = () => {
   return (
     <div>
@@ -7,11 +9,11 @@ const Header = () => {
             <img
               src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png"
               alt=""
-              width="30"
+              width="35"
               height="30"
               className="d-inline-block align-text-top"
             />
-            ReactApp
+            <div>ReactApp</div>
           </a>
         </div>
       </nav>
