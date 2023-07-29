@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import Table from './Components/Table';
+import Search from './Components/Searchbar';
+import { useEffect, useState } from "react";
 
-function App() {
+export default function App() {
+  const [search, setSearch] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Header />
+      <Search onSearchChange={setSearch} /> {/* Pass the setSearch function as a prop */}
+      <Table search={search} /> {/* Pass the search state to the Table component */}
     </div>
   );
 }
-
-export default App;
